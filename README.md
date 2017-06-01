@@ -39,7 +39,7 @@ python3 app.py
 
 * user
 	* Input: "能給我一些糞歌嗎" or "來點糞歌" or "幹你老師點糞歌" 
-		*Reply: "如果我是 dj 你會愛我嗎:
+		* Reply: "如果我是 dj 你會愛我嗎:
 			https://www.youtube.com/watch?v=UIBlXO4OIbI
 			帝雉:
 			https://www.youtube.com/watch?v=WqtfKb4yYAE&list=PLVnPXvGuX__R74_huVRIWY5VyEC23NRdM
@@ -49,25 +49,25 @@ python3 app.py
 		
 
 	* Input: "抒情的歌" or "放鬆的歌"
-		*Reply: Guilty Crown - Departures ～ Blessing:
+		* Reply: Guilty Crown - Departures ～ Blessing:
 			https://www.youtube.com/watch?v=pQyjzmB_YeU&list=RDAgnrim_5pio&index=3
 			Egoist - All Alone With You:
 			https://www.youtube.com/watch?v=Q5eYNOnyBcU&list=RDAgnrim_5pio&index=6"
 
 	* Input: "好心情" or "愉悅的歌"
-		*Reply: closer:
+		* Reply: closer:
 			https://www.youtube.com/watch?v=PT2_F-1esPk
 			Hitorigoto:
 			https://www.youtube.com/watch?v=vblA_pg1kKM
 * state1
 	* Input: "殺梗是誰" or "那個拉風的男人是誰" or "殺梗??"
-		*Reply: 殺梗 wiki:
+		* Reply: 殺梗 wiki:
 			https://zh.wikipedia.org/wiki/Xargon
 			殺梗 twitch:
 			https://www.twitch.tv/xargon0731
-*state3
+* state3
 	* Input: "他有老婆嗎？" or "他老婆是誰"
-		*Reply: xargon 老婆是優格姊姊
+		* Reply: xargon 老婆是優格姊姊
 			附上新聞網址:
 			http://star.ettoday.net/news/840489
 
