@@ -4,6 +4,10 @@
 就能得到歌單
 
 
+### Secret Data
+
+`API_TOKEN` and `WEBHOOK_URL` in app.py **MUST** be set to proper values.
+Otherwise, you might not be able to run your code.
 
 ### Run Locally
 You can either setup https server or using `ngrok` as a proxy.
