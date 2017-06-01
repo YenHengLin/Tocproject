@@ -7,8 +7,8 @@ from flask import Flask, request, send_file
 from fsm import TocMachine
 
 
-API_TOKEN = 'Your Telegram API Token'
-WEBHOOK_URL = 'Your Webhook URL'
+API_TOKEN = '343547571:AAEpj9QLsT7VKP4XuMh2Wxj98moC99FUQFk'
+WEBHOOK_URL = 'https://62f3265e.ngrok.io/hook'
 
 app = Flask(__name__)
 bot = telegram.Bot(token=API_TOKEN)
@@ -16,7 +16,12 @@ machine = TocMachine(
     states=[
         'user',
         'state1',
-        'state2'
+        'state2',
+        'state3',
+        'state4',
+        'state5'
+
+
     ],
     transitions=[
         {
@@ -31,14 +36,45 @@ machine = TocMachine(
             'dest': 'state2',
             'conditions': 'is_going_to_state2'
         },
+        
+
         {
-            'trigger': 'go_back',
+            'trigger': 'advance',
+            'source': 'state1',
+            'dest': 'state3',
+            'conditions':'is_going_to_state3'
+        },
+
+         
+        {
+            'trigger': 'advance',
+            'source': 'state3',
+            'dest': 'state4',
+            'conditions':'is_going_to_state4'
+        },
+        
+        {
+            'trigger': 'advance',
             'source': [
                 'state1',
-                'state2'
+                'state2',
+                'state3',
+                'state4',
+                'state5'
             ],
-            'dest': 'user'
+            'dest': 'user',
+            'conditions':'is_going_to_user'
+        },
+
+        {
+            'trigger': 'advance',
+            'source':'user',
+            'dest': 'state5',
+            'conditions':'is_going_to_state5'
         }
+
+       
+        
     ],
     initial='user',
     auto_transitions=False,
